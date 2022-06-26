@@ -53,3 +53,4 @@ function shallowClone(object){
   }
   return newObj;
 }
+
