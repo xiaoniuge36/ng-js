@@ -100,4 +100,53 @@ function ObjectCreate(obj) {
     return new F();
 }
 
+//统计数组出现次数最多的元素
+function mostFrequent(arr) {
+    var result = {};
+    for (var i = 0; i < arr.length; i++) {
+        if (result[arr[i]]) {
+            result[arr[i]]++;
+        } else {
+            result[arr[i]] = 1;
+        }
+    }
+    var max = 0;
+    var maxKey = '';
+    for (var key in result) {
+        if (result[key] > max) {
+            max = result[key];
+            maxKey = key;
+        }
+    }
+    return maxKey;
+}
+
+//reduce方法
+function reduce(arr, fn, init) {
+    var result = init;
+    for (var i = 0; i < arr.length; i++) {
+        result = fn(result, arr[i]);
+    }
+    return result;
+}
+
+//parseInt方法
+function parseInt(str, radix) {
+    var result = 0;
+    if (radix) {
+        result = parseInt(str, radix);
+    } else {
+        result = parseInt(str);
+    }
+    return result;
+}
+
+var obj = {a:1, b:2, c:3};
+
+for (var prop in obj) {
+    console.log(prop);
+    console.log(obj[prop]);
+    console.log([prop]);
+  console.log("obj." + prop + " = " + obj[prop]);
+}
 

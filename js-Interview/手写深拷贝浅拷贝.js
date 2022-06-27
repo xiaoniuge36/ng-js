@@ -42,7 +42,6 @@ function deepClone (target, hash = new WeakMap()) { // 额外开辟一个存储�
 }
 
 //浅拷贝
-
 function shallowClone(object){
   let newObj = [];
 
