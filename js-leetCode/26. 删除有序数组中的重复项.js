@@ -4,19 +4,23 @@
  * @author: niuge
  */
 //删除排序数组中的重复项
-var removeDuplicates = function(nums) {
-    if (nums.length === 0) {
-        return 0;
-    }
-    let i = 0;
-    for (let j = 1; j < nums.length; j++) {
-        if (nums[i] !== nums[j]) {
-            i++;
-            nums[i] = nums[j];
-        }
-    }
-    return i + 1;
-}
+// var removeDuplicates = function(nums) {
+//     if (nums.length === 0) {
+//         return 0;
+//     }
+//     let i = 0;
+//     for (let j = 1; j < nums.length; j++) {
+//         if (nums[i] !== nums[j]) {
+//             console.log(nums[i]);
+//             console.log(nums[j]);
+//             i++;
+//             nums[i] = nums[j];
+//         }
+//         console.log(nums);
+//         // return nums;
+//     }
+//     return i + 1;
+// }
  console.log(removeDuplicates([1,1,2]));
 
  function unique(arr) {
@@ -43,3 +47,7 @@ function unique2(arr){
     }
 }
 console.log(unique2([1,1,2]));
+
+
+
+
