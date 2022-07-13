@@ -17,6 +17,10 @@ function uniqueArr(arr) {
     return [...new Set(arr)];
 }
 
+function unique(arr){
+    return [...new Set(arr)];
+}
+
 //数组去重
 function unique(arr) {
     var result = [];

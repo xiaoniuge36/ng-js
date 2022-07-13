@@ -11,6 +11,14 @@ function demo(arr) {
     }
     return newArr
 }
+
+//数组扁平化
+function flatten(arr) {
+    if (!Array.isArray(arr)) {
+        return arr
+    }
+    return arr.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
+}
  
 
 // function demo(arr){
@@ -25,6 +33,11 @@ function demo(arr) {
 //     }
 // }
 
+
 var array = ['1', '2', ['2', ['6', ['4', '9'], '8'], '5'], '3', '3', '2'];
 var reduce = demo(array);
 console.log(reduce);
+
+var reduce1 = flatten(array);
+
+console.log(reduce1);
