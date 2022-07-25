@@ -106,3 +106,40 @@ function bubbleSort(arr) {
     }
 
 }
+
+//while循环
+let i = 0;
+while(i<10){
+    console.log(i);
+    i++;
+}
+//do while循环
+var b = 0;
+do{
+    console.log(i);
+    i++;
+}
+while(i<10);
+//for循环
+for(let i=0;i<10;i++){
+    console.log(i);
+}
+//for in循环  
+let obj = {
+    name:'张三',
+    age:18
+}
+for(let key in obj){
+    console.log(key);
+}
+//for of循环
+let arr1 = [1,2,3,4,5];
+for(let item of arr1){
+    console.log(item);
+}
+//for循环
+for(let i=0;i<10;i++){
+    console.log(i);
+}
+
+map
