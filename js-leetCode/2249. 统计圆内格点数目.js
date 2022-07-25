@@ -1,4 +1,4 @@
-
+//统计园内格点数目，根据公式 （x-y）**2 + (x+y)**2 = r**2  进行计算
 function countLatticePoints(circles) {
     const n = circles.length;
     let minX = Number.MAX_SAFE_INTEGER, minY = minX,
