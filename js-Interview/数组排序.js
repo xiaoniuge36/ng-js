@@ -1,6 +1,7 @@
 //sort排序
 const arr = [3,2,4,1,4];
 arr.sort((a,b)=>a-b);
+//<0 升序，>0 降序
 console.log(arr);
 //reverse反转
 const arr2 = [3,2,4,1,4];
