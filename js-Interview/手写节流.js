@@ -16,15 +16,15 @@ function throttle(fn, delay) {
 
 // 节流
 // 设置一个标志
-function throttle(fn, delay) {
-  let flag = true;
-  return () => {
-    if (!flag) return;
-    flag = false;
-    timer = setTimeout(() => {
-      fn();
-      flag = true;
-    }, delay);
+function throttle(fn, delay) { // fn是要执行的函数，delay是时间间隔
+  let flag = true; // 设置一个标志，初始值为true
+  return () => { // 返回一个函数
+    if (!flag) return; // 如果标志为false，直接返回
+    flag = false; // 如果标志为true，将标志设置为false
+    timer = setTimeout(() => { // 设置一个定时器
+      fn(); // 执行函数
+      flag = true; // 执行完函数后，将标志设置为true
+    }, delay); 
   };
 }
 
