@@ -20,7 +20,7 @@ var addTwoNumbers = function (l1, l2) {
 
 // 两数之和
 
-let twoSum = function (nums, target) { //nums是一个数组
+let twoSum = function (nums, target) { //nums是一个数组1
   for (let i = 0; i < nums.length; i++) { //遍历数组
     let suntarget = target - nums[i]; //目标值减去当前数
     let index = nums.indexOf(suntarget); //查找目标值减去当前数的索引
