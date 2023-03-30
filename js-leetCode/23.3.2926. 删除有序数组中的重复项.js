@@ -6,8 +6,6 @@ function removeDuplicates(nums) {
     // 快指针
     if (nums[j] !== nums[i]) {
       // 如果快指针指向的元素不等于慢指针指向的元素
-      //   console.log(i, j);
-      console.log(nums[++i], nums[j]);
       nums[++i] = nums[j]; // 慢指针向前移动一位，然后把快指针指向的元素赋值给慢指针指向的元素
     }
   }
